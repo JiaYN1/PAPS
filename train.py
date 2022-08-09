@@ -34,7 +34,6 @@ class Solver_edge(object):
         self.timestamp = int(time.time())
         self.epoch = 1
         self.lr = args.lr
-        # self.model1 = net()
         self.model = edge_enhance_multi(channels=32, num_of_layers=8)
         self.optimizer = Adam(self.model.parameters(), lr=self.lr)
         self.train_dataset = get_train_data(args.traindata_dir)
@@ -105,10 +104,10 @@ class Solver_edge(object):
                 ## 网络输出
                 # model1_img = self.model1(pan_img, lr_img)
                 outputs = self.model(pan_img, lr_img)
-                # ssim = ssim_loss(outputs, ms_img, normalize=True)
-                train_loss = loss(outputs, ms_img) #+ (1 - ssim)
+                ssim = ssim_loss(outputs, ms_img, normalize=True)
+                train_loss = loss(outputs, ms_img) + (1 - ssim)
                 self.writer.add_scalar('train_loss', train_loss, step)
-                # self.writer.add_scalar('ssim_loss', ssim, step)
+                self.writer.add_scalar('ssim_loss', ssim, step)
                 if step % 800 == 0:
                     self.writer.add_image('pan', pan_img[0], step)
                     self.writer.add_image('lr', lr_u_img[0], step)
