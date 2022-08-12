@@ -29,7 +29,7 @@ python test.py
 Generally the results will be generated below the 'output' folder.
 
 ## Main Architecture
-![image](imgs/net1.png)
+![image](imgs/net.jpg)
 
 
 ## Dependencies
