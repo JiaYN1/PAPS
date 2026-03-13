@@ -59,4 +59,4 @@ cudatoolkit = 11.1.74
   }
 
 
-[Paper]([http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20230120&flag=1](https://ieeexplore.ieee.org/document/10415854))
+[Paper](https://ieeexplore.ieee.org/abstract/document/10415854/)
