@@ -45,3 +45,18 @@ torchvision = 0.10.1
 opencv-python = 4.5.3.56
 cudatoolkit = 11.1.74
 ```
+# Citation
+
+  @ARTICLE{10415854,
+  author={Jia, Yanan and Hu, Qiming and Dian, Renwei and Ma, Jiayi and Guo, Xiaojie},
+  journal={IEEE/CAA Journal of Automatica Sinica}, 
+  title={PAPS: Progressive Attention-Based Pan-sharpening}, 
+  year={2024},
+  volume={11},
+  number={2},
+  pages={391-404},
+  keywords={Codes;Data mining;Spatial resolution;High-resolution multispectral image;image fusion;pan-sharpening;progressive enhancement},
+  doi={10.1109/JAS.2023.123987}}
+
+
+[Paper]([http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20230120&flag=1](https://ieeexplore.ieee.org/document/10415854))
