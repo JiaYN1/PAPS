@@ -55,8 +55,7 @@ cudatoolkit = 11.1.74
     number={2},
     pages={391--404},
     year={2024},
-    publisher={IEEE}
-  }
+    publisher={IEEE}}
 
 
 [Paper](https://ieeexplore.ieee.org/abstract/document/10415854/)
